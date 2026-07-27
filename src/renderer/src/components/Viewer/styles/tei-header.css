@@ -1,0 +1,103 @@
+.tei-teiheader-cloned {
+  --tei-font-family:
+    system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --tei-bg: #fbfcfd;
+  --tei-border: #e6edf2;
+  --tei-accent: #2563eb;
+  --tei-muted: #6b7280;
+  --tei-attr-bg: #eef2ff;
+  --tei-radius: 8px;
+  --tei-padding: 0.75rem;
+  font-family: var(--tei-font-family);
+  font-size: 0.95rem;
+  color: #0f1724;
+  line-height: 1.45;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tei-teiheader-cloned * {
+  box-sizing: inherit;
+}
+
+.tei-teiheader-cloned .tei-header-display {
+  background: var(--tei-bg);
+  border: 1px solid var(--tei-border);
+  padding: var(--tei-padding);
+  border-radius: var(--tei-radius);
+  overflow: visible;
+}
+
+.tei-teiheader-cloned .tei-header-block {
+  display: block;
+  margin: 0 0 0.75rem 0;
+  padding: 0.45rem 0.6rem;
+  border-left: 3px solid rgba(37, 99, 235, 0.08);
+  background: transparent;
+}
+
+.tei-teiheader-cloned .tei-header-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.35rem;
+  color: var(--tei-accent);
+}
+
+.tei-teiheader-cloned .tei-header-inline {
+  display: inline-block;
+}
+
+.tei-teiheader-cloned .tei-header-title {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.tei-teiheader-cloned .tei-header-author,
+.tei-teiheader-cloned .tei-header-editor {
+  font-style: italic;
+}
+
+.tei-teiheader-cloned .tei-header-date,
+.tei-teiheader-cloned .tei-header-pubplace,
+.tei-teiheader-cloned .tei-header-licence {
+  font-size: 0.92rem;
+  color: var(--tei-muted);
+}
+
+.tei-teiheader-cloned .tei-header-attributes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.35rem;
+  align-items: center;
+}
+
+.tei-teiheader-cloned .tei-header-attr {
+  display: inline-block;
+  font-size: 0.78rem;
+  padding: 0.18rem 0.44rem;
+  border-radius: 999px;
+  background: var(--tei-attr-bg);
+  color: var(--tei-accent);
+  white-space: nowrap;
+}
+
+.tei-teiheader-cloned a {
+  color: var(--tei-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.tei-teiheader-cloned a:focus,
+.tei-teiheader-cloned a:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--tei-accent) 20%, transparent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.tei-teiheader-cloned img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
